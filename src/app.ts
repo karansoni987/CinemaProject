@@ -1,11 +1,13 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import { ApiRoutes } from './routes';
 import { prisma } from './config/prismaClient';
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use('/api', ApiRoutes);
 
 app.get('/', (req, res) => {
     console.log(`Ping received at ${new Date().toISOString()}`);

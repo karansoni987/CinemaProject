@@ -9,8 +9,8 @@
 ### 1. **Clone the Repository**
 
 ```bash
-git clone 
-cd 
+git clone https://github.com/karansoni987/CinemaProject.git
+cd CinemaProject/
 ```
 
 ### 2. **Install Dependencies**
